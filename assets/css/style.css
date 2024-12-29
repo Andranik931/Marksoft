@@ -344,33 +344,57 @@ a {
   line-height: 24px;
 }
 
+
+
+/* left-block */
 .leftBlock-innerCont {
-  min-width: 441px;
-  min-height: 642px;
+  /* min-width: 441px;
+  min-height: 642px; */
   background-color: blue;
+  padding-right: 100px;
+  gap: 146.5px;
+}
+
+.left-column1 {
+  gap: 145px;
+  background-color: var(--color-number1) ;
+  /* min-width: 115.6px;
+  min-height: 100px; */
+}
+
+.right-column2 {
+  background-color: yellowgreen;
+  gap: 123px
 }
 
 
+/* left block */
 
+.hexagon-box {
+  min-width: 115.6px;
+  min-height: 100px;
+  background-image: url(../img/paligon/paligon-vector/paligon-background.svg);
+  background-repeat: no-repeat;
+  gap: 10px;
+}
 
+.hexagon-box p {
+  margin: unset;
+}
 
+/* center-block */
 .centerBlock-innerCont {
   background-color: brown;
   /* min-height: 642px; */
   gap: 98px;
-
-
 }
 
-
-/* center-block */
 .travel {
   /* max-width: 218px;
   min-height: 132px; */
   gap: 10px;
   position: relative;
 }
-
 
 .travel>p {
   color: var(--color-number4);
@@ -394,6 +418,7 @@ a {
   background-repeat: no-repeat;
   position: absolute;
   top: 128px;
+  right: 123px
 }
 
 .center-box {
@@ -418,7 +443,6 @@ a {
   max-height: 33.98px;
 }
 
-
 .real-estate {
   /* max-width: 218px;
   min-height: 132px; */
@@ -439,17 +463,17 @@ a {
   position: relative;
 }
 
-
 .real-estateBox::before {
   content: '';
   min-width: 13px;
   min-height: 105px;
   background-image: url(../img/paligon/paligon-vector/line-bottom.svg);
   background-repeat: no-repeat;
+  background-position: cover;
   position: absolute;
   bottom: 93px;
+  right: 51px;
 }
-
 /* center-block */
 
 
@@ -457,14 +481,26 @@ a {
 
 
 
-
-
-
+/* right-block */
 .rightBlock-innerCont {
-  min-width: 413px;
-  min-height: 642px;
+  /* min-width: 413px;
+  min-height: 642px; */
   background-color: green;
+  padding-left: 100px;
+  gap: 163.4px;
 }
+
+.left-column3 {
+  background-color: gray;
+  gap: 123px
+}
+
+.right-column4 {
+  gap: 145px;
+  background-color: peru;
+}
+
+/* right-block */
 
 
 /* thirdSection finish */
