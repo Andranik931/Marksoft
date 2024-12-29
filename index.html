@@ -12,14 +12,14 @@
 <body>
     <!-- header-start -->
     <header>
-        <div class="header">
+        <div class="header-container">
             <div class="nav">
                 <div class="nav-container">
-                    <div class="nav-content">
+                    <div class="nav-content d-flex jc-spaceBetween">
                         <div class="logo">
-                            <img src="./assets/img/logo.svg" alt="">
+                            <img src="./assets/img/logo.svg" alt="logo">
                         </div>
-                        <ul class="nav-bar">
+                        <ul class="menu d-flex ai-center">
                             <li>
                                 <a href="#">Մեր մասին</a>
                             </li>
@@ -33,13 +33,13 @@
                                 <a href="#">Ծրագրեր</a>
                             </li>
                         </ul>
-                        <div class="lenguage-container">
-                            <div class="eart-cont">
-                                <img src="./assets/img/earth-grid.svg" alt="#">
-                                <span>ՀԱՅ</span>
+                        <div class="lenguage-container d-flex ai-center">
+                            <div class="eart-block d-flex tt-uppercase">
+                                <img src="./assets/img/earth-grid.svg" alt="earth-grid">
+                                <span class="span-colorN6">հայ</span>
                             </div>
-                            <div class="btn-entry">
-                                <a href="#">Մուտք</a>
+                            <div class="entry-btn flex-box tt-uppercase fw-600">
+                                <a class="a-colorN3" href="#">մուտք</a>
                             </div>
                         </div>
                     </div>
@@ -49,30 +49,237 @@
         </div>
     </header>
     <!-- header-finish -->
-     
-    <!-- section1-start -->
-    <section>
-        <div class="section1">
-            <div class="section1-leftBox">
-                <div class="heading">
-                    <h2><span>Marksoft</span> ծրագրային ապահովման ընկերություն</h2>
-                    <p>Ընկերությունը մշակում, նախագծում և ապահովում է ծրագրային համակարգեր (CRM) տարբեր հարթակների համար:</p>
+
+    <!-- main-start -->
+    <main>
+        <!-- firstSecton--start -->
+        <section>
+            <div class="firstSection d-flex jc-spaceBetween ai-start">
+                <div class="firstSection-leftBlock d-flex flex-dir-column">
+                    <div class="firstSection-heading d-flex flex-dir-column">
+                        <h2 class="tt-uppercase fs-36px fw-500"><span class="span-colorN1">Marksoft</span> ծրագրային<br>
+                            ապահովման
+                            ընկերություն</h2>
+                        <p class="fs-18px fw-500">Ընկերությունը մշակում, նախագծում և<br> ապահովում է ծրագրային
+                            համակարգեր (CRM)<br> տարբեր
+                            հարթակների
+                            համար:</p>
+                    </div>
+                    <div class="btn-box flex-box tt-uppercase fs-18px fw-500">
+                        <!-- img-ի մեջ գրված չէ, սխալ է? -->
+                        <img src="./assets/img/button-vector/top-right-vector.svg" class="top-right-vector" alt="vector">
+                        <a href="#">Կապ հաստատել</a>
+                        <img src="./assets/img/button-vector/bottom-left-vector.svg" class="bottom-left-vector" alt="vector">
+                        <!-- img-ի մեջ գրված չէ, սխալ է? -->
+                    </div>
                 </div>
-                <div class="to-contact">
-                    <a href="#">Կապ հաստատել</a>
+                <div class="firstSection-rightBlock flex-box">
+                    <img src="./assets/img/Security-icon.svg" alt="security-icon">
                 </div>
             </div>
+        </section>
+        <!-- firstSection--finish -->
 
-            <div class="section1-rightBox">
-                <img src="./assets/img/Security-icon.svg" alt="#">
+        <!-- secondSection--start -->
+        <section>
+            <div class="secondSection d-flex jc-start flex-dir-column">
+                <div class="services d-flex flex-dir-column ">
+                    <h2 class="tt-uppercase fs-36px fw-500">ծառայություններ</h2>
+                    <p class="fs-18px fw-500">Մենք ստեղծում ենք հատուկ CRM համակարգեր, ամրագրման առաջադեմ<br>
+                        հավելվածներ՝ օգտագործելով ծրագրավորման տարբեր լուծումներ։</p>
+                </div>
+                <div class="secondSection-contentBlock d-flex ai-start flex-wrap">
+                    <div class="secSec-item">
+                        <div class="img-cont">
+                            <img src="./assets/img/servic-svg/soft-consulting1.svg" alt="soft-consulting">
+                        </div>
+                        <div class="heading-item">
+                            <h2>Ծրագրային խորհրդատվություն</h2>
+                            <p>Ծրագրային ապահովման, մշակման ռազմավարությունների, տեխնոլոգիաների և ճարտարապետության
+                                վերաբերյալ խորհրդատվության տրամադրում։</p>
+                        </div>
+                    </div>
+                    <div class="secSec-item">
+                        <div class="img-cont">
+                            <img src="./assets/img/servic-svg/custom-soft2.svg" alt="custom-soft">
+                        </div>
+                        <div class="heading-item">
+                            <h2>Ծրագրային զարգացում</h2>
+                            <p>Հաճախորդի պահանջների հիման վրա հարմարեցված ծրագրային լուծումների նախագծում և մշակում:</p>
+                        </div>
+                    </div>
+                    <div class="secSec-item">
+                        <div class="img-cont">
+                            <img src="./assets/img/servic-svg/web-dev3.svg" alt="web-dev">
+                        </div>
+                        <div class="heading-item">
+                            <h2>Վեբ հավելվածի զարգացում</h2>
+                            <p>Վեբի վրա հիմնված հավելվածների ստեղծում տարբեր նպատակների համար, ինչպիսիք են էլեկտրոնային
+                                առևտուրը, ամրագրման համակարգերը և այլն:</p>
+                        </div>
+                    </div>
+                    <div class="secSec-item">
+                        <div class="img-cont">
+                            <img src="./assets/img/servic-svg/mobile-dev4.svg" alt="mobile-dev">
+                        </div>
+                        <div class="heading-item">
+                            <h2>Մոբայլ հավելվածի զարգացում</h2>
+                            <p>Բջջային հավելվածների ստեղծում iOS-ի, Android-ի կամ միջպլատֆորմային հավելվածների
+                                զարգացում:</p>
+                        </div>
+                    </div>
+                    <div class="secSec-item">
+                        <div class="img-cont">
+                            <img src="./assets/img/servic-svg/design5.svg" alt="design">
+                        </div>
+                        <div class="heading-item">
+                            <h2>UI/UX դիզայն</h2>
+                            <p>Հասկանալ հաճախորդների կարիքները և համապատասխանաբար նախագծել ապրանքներ ու ծառայություններ։
+                            </p>
+                        </div>
+                    </div>
+                    <div class="secSec-item">
+                        <div class="img-cont">
+                            <img src="./assets/img/servic-svg/QA-testing6.svg" alt="QA-testing">
+                        </div>
+                        <div class="heading-item">
+                            <h2>Որակի ապահովում
+                                և<br> թեստավորում</h2>
+                            <p>Իրականացնել պրոդուկտների ավտոմատ թեստավորում, այդ կերպ՝ նպաստելով համակարգի արդյունավետ
+                                ու ճշգրիտ աշխատանքին։</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <div class="btn-box flex-box tt-uppercase fs-18px fw-500">
+                        <!-- img-ի մեջ գրված չէ, սխալ է? -->
+                        <img src="./assets/img/button-vector/top-right-vector.svg" class="top-right-vector" alt="vector">
+                        <a href="#">տեսնել բոլորը</a>
+                        <img src="./assets/img/button-vector/bottom-left-vector.svg" class="bottom-left-vector" alt="vector">
+                        <!-- img-ի մեջ գրված չէ, սխալ է? -->
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-     <!-- section1-finish -->
+        </section>
+        <!-- secondSection--finish -->
 
-    <section>
-        
-    </section>
+        <!-- thirdSection--start -->
+        <section>
+            <div class="thirdSection d-flex jc-start flex-dir-column">
+                <div class="fields d-flex flex-dir-column">
+                    <h2 class="tt-uppercase fs-36px fw-500">ոլորտներ</h2>
+                    <p class="fs-18px fw-500">Կազմակերպությունը մասնագիտացած է ցանկացած ոլորտում։ Մեր փորձառու
+                        մասնագետները կստեղծեն ցանկացած հավելված անկախ ոլորտից։</p>
+                </div>
+
+                <div class="thirdSection-container d-flex ">
+                    <div class="leftBlock-innerCont"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+                    <!-- center-block -->
+                    <div class="centerBlock-innerCont d-flex flex-dir-column">
+                        <div class="travel flex-box flex-dir-column">
+                            <p>Ֆինանսներ և բանկեր</p>
+                            <div class="travel-content"></div>
+                        </div>
+                        <div class="center-box flex-box">
+                            <div class="img-box d-flex flex-dir-column ai-center">
+                                <div class="topImg">
+                                    <img src="./assets/img/paligon/logo.svg" alt="logo">
+                                </div>
+                                <div class="bottomImg">
+                                    <img src="./assets/img/paligon/Marksoft.svg" alt="Marksoft">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="real-estate flex-box flex-dir-column">
+                            <div class="real-estateBox ai-center"></div>
+                            <p>Անշարժ գույք</p>
+                        </div>
+                    </div>
+                    <!-- center-block -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="rightBlock-innerCont"></div>
+                </div>
+            </div>
+        </section>
+        <!-- thirdSection--finish -->
+    </main>
+    <!-- main-over -->
 
 
     <script src="./assets/js/"></script>
